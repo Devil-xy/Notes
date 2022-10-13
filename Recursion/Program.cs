@@ -1,7 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
-namespace TestFoRrecursion
+namespace Recursion
 {
     class Person
     {
@@ -27,7 +28,7 @@ namespace TestFoRrecursion
             }
             foreach (var item in GetPersons(0, presons))
             {
-                System.Console.WriteLine(item.Name);
+                System.Console.WriteLine($"大家好，我是{item.Name}，我的PID是{item.PID}");
             }
 
         }
